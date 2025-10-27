@@ -26,7 +26,6 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-
 nav:
   - Главная: index.md
   - Введение:
