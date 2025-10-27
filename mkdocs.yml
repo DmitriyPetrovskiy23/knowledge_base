@@ -2,8 +2,83 @@ site_name: WIKIT.REAKF.RU
 site_url: https://DmitriyPetrovskiy23.github.io/knowledge_base/
 theme:
   name: material
+  language: ru
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - search.suggest
+    - search.highlight
+
 nav:
   - Главная: index.md
-  - Тестовая страница: shell.md
-  - Тестовая папка:
-    - Файл внутри папки: new_folder/test.md
+  - Введение:
+    - Обзор: onboarding/index.md
+    - Структура отдела: onboarding/structure.md
+    - Контакты: onboarding/contacts.md
+  - Инфраструктура:
+    - Обзор: infrastructure/index.md
+    - Сеть: infrastructure/network/
+    - Серверы: infrastructure/servers/
+    - Рабочие станции: infrastructure/workstations/
+    - Телекоммуникации: infrastructure/telecom/
+  - Сервисы:
+    - Обзор: services/index.md
+    - СДО (LMS): services/lms/
+    - Электронная почта: services/email/
+    - Портал ВУЗа: services/portal/
+    - Wi-Fi: services/wifi/
+  - ПО:
+    - Обзор: software/index.md
+    - Лицензионное ПО: software/licensed/
+    - Бесплатное ПО: software/free/
+    - Специализированное ПО: software/special/
+  - Процессы:
+    - Обзор: processes/index.md
+    - Инциденты: processes/incidents/
+    - Заявки: processes/requests/
+    - Изменения: processes/changes/
+    - SLA: processes/sla/
+  - Безопасность:
+    - Обзор: security/index.md
+    - Политики: security/policies/
+    - Инциденты: security/incidents/
+    - Аудит: security/audit/
+  - Справочные материалы:
+    - Обзор: reference/index.md
+    - FAQ: reference/faq/
+    - Шаблоны: reference/templates/
+    - Контакты: reference/contacts/
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
