@@ -3,28 +3,6 @@ site_url: https://DmitriyPetrovskiy23.github.io/knowledge_base/
 theme:
   name: material
   language: ru
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - toc.follow
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.annotate
-  palette:
-    - scheme: default
-      primary: blue
-      accent: light blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
 
 nav:
   - Главная: index.md
