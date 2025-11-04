@@ -8,6 +8,7 @@ nav:
   - Главная: index.md
   - Введение:
     - Обзор: onboarding/index.md
+    - Руководство по Markdown: onboarding/markdown-guide.md
     - Структура отдела: onboarding/structure.md
     - Контакты: onboarding/contacts.md
   - Инфраструктура:
